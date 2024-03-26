@@ -13,6 +13,9 @@
 
 
 for (let c = 0; c < 10; c++) {
+    if (c % 2 === 0) {
+        continue;
+    }
     console.log("c", c);
 
     let d = 0;
