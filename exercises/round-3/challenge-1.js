@@ -14,23 +14,26 @@ function isPrimeNumber(number) {
         }
     }
 
+    if (number === 0 || number === 1) {
+        return false;
+    }
+
     return true;
 }
 
-function countAllPrimeNumbers(until) {
-    if (until > 10000) {
+function countAllPrimeNumbersUntil(target) {
+    if (target > 10000) {
         return 'Number not supported';
     }
 
     let count = 0;
-    for (let i = 1; i <= until; i++) {
+    for (let i = 2; i < target; i++) {
         if (isPrimeNumber(i)) {
             console.log(i);
             count++;
         }
     }
-
     return count;
 }
 
-console.log("Count: ", countAllPrimeNumbers(100));
+console.log("Count ", countAllPrimeNumbersUntil(100));

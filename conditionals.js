@@ -40,3 +40,7 @@ function isOlder(myAge, compare) {
 if (!isOlder(me.age, 30)) {
     console.log("I'm younger than or 30 years old.");
 }
+
+if (40 !== 30) {
+    console.log('this is true');
+}
